@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar container com Flexbox */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Alinha o logo à esquerda e o menu à direita */
+    align-items: center; /* Alinha os itens verticalmente */
+    background-color: #B4D2F4;
+    padding: 10px 20px; /* Espaçamento ao redor da navbar */
+}
+
+/* Logo */
+.logo img {
+    width: 50px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto;
+}
+
+/* Menu - Estilo da lista */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox para os itens de menu */
+}
+
+/* Itens do menu */
+li {
+    margin: 0 15px; /* Espaçamento entre os itens do menu */
+}
+
+li a {
+    display: block;
+    color: #1B4D87;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Arsenal', sans-serif;
+    font-weight: bold;
+}
+
+/* Efeito hover nos itens do menu */
+li a:hover {
+    background-color: #111;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Estilos para os banners */
+.banner-left {
+    background-color: #4CAF50;
+    color: white;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.banner-right-top, .banner-right-bottom {
+    background-color: #2196F3;
+    color: white;
+    border-radius: 20px;
+}
+
+.banner-right-top {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.banner-right-bottom {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/* Responsividade das imagens */
+img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.img2 {
+    border-radius: 0px;
+    padding-left: 300px;
+    height: 91px;
+    width: 328px;
+}
+
+.img3 {
+    border-radius: 0px;
+    height: 35px;
+    width: 35px;
+}
+
+/* Estilos para o título */
+h1 {
+    color: #1B4D87;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
