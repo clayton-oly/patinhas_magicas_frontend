@@ -1,3 +1,4 @@
+/*#region global*/
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arsenal&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
@@ -10,13 +11,29 @@
     list-style: none;
 }
 
+/*paleta de cores*/
+:root {
+    --clr-base: #333333;
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+    --clr-accent: #fff000;
+    --clr-card: rgba(255, 255, 255, .2);
+    --no-color: transparent;
+    --clr-gradient1: linear-gradient(45deg, #000839 10%, #8400ff 90%);
+    --clr-gradient2: linear-gradient(45deg, #8400ff 10%, #000839 90%);
+}
+
+/*regras*/
+
+/*#endregion*/
+
+/*#region topo*/
 /* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #B4D2F4;
-    width: 1180px;
     height: 80;
     margin-left: 358px;
     margin-right: 358px;
@@ -24,6 +41,8 @@
     padding-bottom: 12px;
     padding-left: 10px;
     padding-right: 10px;
+    max-width: 1180px;
+    width: 100%;
 
     /* Logo */
     & .imgLogo {
@@ -40,12 +59,12 @@
 
 }
 
-h1 {
+h1,
+h2 {
     text-align: center;
     font-family: 'Mochiy Pop P One';
     color: #1B4D87;
     padding: 10px;
-    align-items: flex-start;
 }
 
 .menu li a {
@@ -113,10 +132,248 @@ h1 {
         margin-top: 10px;
     }
 }
-footer {
-    background: #B4D2F4;
-    height: 310px;
+
+/*#endregion*/
+
+/*#region welcome*/
+
+.sessaoWelcome {
     width: 1180px;
+    align-items: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin: auto;
+}
+
+.cardsWelcome {
+    width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin: auto;
+}
+
+.cardPet {
+    width: 300px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 0px;
+}
+
+.cardTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE1F5;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.cardPet img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.cardImg {
+    background-color: #B4D2F4;
+    border-radius: 10px 10px 10px 10px;
+    width: 300px;
+}
+
+.cardPadding {
+    padding: 0 5px 5px 5px;
+}
+
+.sessaoWelcome p {
+    color: #1B4D87;
+    margin-bottom: 10px;
+}
+
+.sessaoWelcome h2 {
+    margin-top: 100px;
+    font-family: 'Mochiy Pop P One';
+    color: #1B4D87;
+    background-color: #FFE1F5;
+}
+
+.sessaoWelcome span {
+    font-family: 'ABeeZee';
+    color: #1B4D87;
+    background-color: #FFE1F5;
+    text-align: center;
+}
+
+/*#endregion*/
+
+/*#region produtos*/
+.sessaoProducts {
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1180px;
+    width: 100%;
     margin-left: 358px;
     margin-right: 358px;
+    margin: auto;
+}
+
+.sessaoProducts h2 {
+    font-family: 'Mochiy Pop P One';
+    color: #1B4D87;
+    font-size: 32px;
+    margin-bottom: 20px;
+    background-color: #B4D2F4;
+}
+
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produto {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.produto h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #1B4D87;
+}
+
+.produto p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.produto button {
+    background-color: #1B4D87;
+    color: #FFF;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.produto button:hover {
+    background-color: #003d6f;
+}
+
+/*#endregion*/
+
+/*#region footer*/
+.rodape {
+    background-color: #B4D2F4;
+    color: #1B4D87;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.rodape p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/*#endregion*/
+
+
+/*#region fale conosco*/
+.faleConosco {
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+input {
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    width: 400px;
+}
+
+textarea {
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    width: 400px;
+    height: 150px;
+}
+
+.mapaeForm {
+    display: flex;
+    justify-content: space-between;
+    /* Alinha as divs nas extremidades */
+    max-width: 1180px;
+    background-color: azure;
+    margin: 0 auto;
+}
+
+
+.azul {
+    width: 50%;
+    /* Faz as divs ocuparem quase metade da largura */
+}
+
+iframe {
+    padding-top: 20px;
+    width: 100%;
+    /* Garante que o mapa ocupe toda a largura */
+    height: 200px;
+    /* Define uma altura para o mapa */
+}
+
+.testetexto {
+    display: flex;
+}
+
+h4 {
+    padding-right: 50px;
+}
+
+.faleConoscoBg {
+    background-color: #FFE1F5;
+    text-align: center;
+}
+
+.sessaoWelcomeBg {
+    background-color: #FFE1F5;
+    text-align: center;
+}
+
+.adoteBg {
+    background-color: #B4D2F4;
+    text-align: center;
+}
+
+.servicosBg {
+    background-color: #FFE1F5;
+    text-align: center;
+}
+
+/*#endregion*/
+
+.navbar,
+.grid-container {
+    margin: 0 auto;
 }
