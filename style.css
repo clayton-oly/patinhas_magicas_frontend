@@ -13,27 +13,40 @@
 
 /*paleta de cores*/
 :root {
-    --clr-base: #333333;
-    --clr-black: #000000;
-    --clr-white: #ffffff;
-    --clr-accent: #fff000;
-    --clr-card: rgba(255, 255, 255, .2);
-    --no-color: transparent;
-    --clr-gradient1: linear-gradient(45deg, #000839 10%, #8400ff 90%);
-    --clr-gradient2: linear-gradient(45deg, #8400ff 10%, #000839 90%);
+    --clr-azulEscuro: #1b4d87;
+    --clr-rosa: #ffe1f5;
+    --clr-azul: #b4d2f4;
 }
 
-/*regras*/
+h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: var(--clr-azulEscuro);
+    font-family: 'ABeeZee';
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: 'Mochiy Pop P One';
+    color: var(--clr-azulEscuro);
+    padding: 10px;
+}
+
 
 /*#endregion*/
 
 /*#region topo*/
 /* Navbar */
+.topoBg {
+    background-color: var(--clr-azul);
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #B4D2F4;
+    background-color: var(--clr-azul);
     height: 80;
     margin-left: 358px;
     margin-right: 358px;
@@ -59,17 +72,9 @@
 
 }
 
-h1,
-h2 {
-    text-align: center;
-    font-family: 'Mochiy Pop P One';
-    color: #1B4D87;
-    padding: 10px;
-}
-
 .menu li a {
     text-decoration: none;
-    color: #1B4D87;
+    color: var(--clr-azulEscuro);
     font-family: 'Arsenal', sans-serif;
     font-weight: bold;
     transition: color 0.3s ease;
@@ -172,7 +177,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FFE1F5;
+    background-color: var(--clr-rosa);
     border-radius: 10px;
     width: 300px;
 }
@@ -184,7 +189,7 @@ h2 {
 }
 
 .cardImg {
-    background-color: #B4D2F4;
+    background-color: var(--clr-azul);
     border-radius: 10px 10px 10px 10px;
     width: 300px;
 }
@@ -194,22 +199,27 @@ h2 {
 }
 
 .sessaoWelcome p {
-    color: #1B4D87;
+    color: var(--clr-azulEscuro);
     margin-bottom: 10px;
 }
 
 .sessaoWelcome h2 {
     margin-top: 100px;
     font-family: 'Mochiy Pop P One';
-    color: #1B4D87;
-    background-color: #FFE1F5;
+    color: var(--clr-azulEscuro);
+    background-color: var(--clr-rosa);
 }
 
 .sessaoWelcome span {
     font-family: 'ABeeZee';
-    color: #1B4D87;
-    background-color: #FFE1F5;
+    color: var(--clr-azulEscuro);
+    background-color: var(--clr-rosa);
     text-align: center;
+}
+
+.navbar,
+.grid-container {
+    margin: 0 auto;
 }
 
 /*#endregion*/
@@ -227,10 +237,10 @@ h2 {
 
 .sessaoProducts h2 {
     font-family: 'Mochiy Pop P One';
-    color: #1B4D87;
+    color: var(--clr-azulEscuro);
     font-size: 32px;
     margin-bottom: 20px;
-    background-color: #B4D2F4;
+    background-color: var(--clr-azul);
 }
 
 .produtos-container {
@@ -257,17 +267,18 @@ h2 {
 .produto h3 {
     margin: 10px 0;
     font-size: 18px;
-    color: #1B4D87;
+    color: var(--clr-azulEscuro);
 }
 
 .produto p {
     color: #555;
     font-size: 14px;
     margin-bottom: 10px;
+    font-family: 'ABeeZee';
 }
 
 .produto button {
-    background-color: #1B4D87;
+    background-color: var(--clr-azulEscuro);
     color: #FFF;
     border: none;
     padding: 10px 15px;
@@ -278,15 +289,15 @@ h2 {
 }
 
 .produto button:hover {
-    background-color: #003d6f;
+    background-color: var(--clr-azulEscuro);
 }
 
 /*#endregion*/
 
 /*#region footer*/
 .rodape {
-    background-color: #B4D2F4;
-    color: #1B4D87;
+    background-color: var(--clr-azul);
+    color: var(--clr-azulEscuro);
     text-align: center;
     padding: 20px 10px;
 }
@@ -305,42 +316,92 @@ h2 {
     margin-right: 350px;
 }
 
+.welcome,
 input {
     border-radius: 10px;
     margin-top: 20px;
     font-size: 15px;
     width: 400px;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: 'ABeeZee';
+    color: var(--clr-azulEscuro);
+    border: 3px solid var(--clr-rosa) !important;
 }
 
+.welcome,
+input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.welcome,
+input::placeholder {
+    color: var(--clr-azulEscuro);
+    opacity: 1;/
+}
+
+.welcome,
 textarea {
     border-radius: 10px;
     margin-top: 20px;
     font-size: 15px;
     width: 400px;
     height: 150px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: 'ABeeZee';
+    color: var(--clr-azulEscuro);
+    border: 3px solid var(--clr-rosa) !important;
+}
+
+.welcome, textarea::placeholder {
+    color: var(--clr-azulEscuro);
+    opacity: 1;
+}
+
+.welcome, textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+#btnSaiba {
+    background-color: var(--clr-rosa);
+    font-family: 'Mochiy Pop P One';
+    color: var(--clr-azulEscuro);
+    width: 150px;
+}
+
+#btnSaiba:hover {
+    background-color: var(--clr-azul);
+    font-family: 'Mochiy Pop P One';
+}
+
+.welcome, textarea:hover {
+    background-color: var(--clr-rosa);
+}
+
+.welcome, input:hover {
+    background-color: var(--clr-rosa);
 }
 
 .mapaeForm {
     display: flex;
     justify-content: space-between;
-    /* Alinha as divs nas extremidades */
     max-width: 1180px;
     background-color: azure;
     margin: 0 auto;
 }
 
-
 .azul {
     width: 50%;
-    /* Faz as divs ocuparem quase metade da largura */
 }
 
 iframe {
     padding-top: 20px;
     width: 100%;
-    /* Garante que o mapa ocupe toda a largura */
     height: 200px;
-    /* Define uma altura para o mapa */
+    border-radius: 10px 10px 10px 10px !important;
 }
 
 .testetexto {
@@ -352,28 +413,23 @@ h4 {
 }
 
 .faleConoscoBg {
-    background-color: #FFE1F5;
+    background-color: var(--clr-rosa);
     text-align: center;
 }
 
 .sessaoWelcomeBg {
-    background-color: #FFE1F5;
+    background-color: var(--clr-rosa);
     text-align: center;
 }
 
 .adoteBg {
-    background-color: #B4D2F4;
+    background-color: var(--clr-azul);
     text-align: center;
 }
 
 .servicosBg {
-    background-color: #FFE1F5;
+    background-color: var(--clr-rosa);
     text-align: center;
 }
 
 /*#endregion*/
-
-.navbar,
-.grid-container {
-    margin: 0 auto;
-}
