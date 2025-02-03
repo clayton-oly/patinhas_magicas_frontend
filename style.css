@@ -7,8 +7,8 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     list-style: none;
+    box-sizing: border-box;
 }
 
 /*paleta de cores*/
@@ -18,19 +18,15 @@
     --clr-azul: #b4d2f4;
 }
 
-h3 {
-    margin: 10px 0;
-    font-size: 18px;
-    color: var(--clr-azulEscuro);
-    font-family: 'ABeeZee';
-}
-
 h1,
-h2 {
+h2,
+.adoteBg h2,
+.servicosBg h2 {
     text-align: center;
     font-family: 'Mochiy Pop P One';
     color: var(--clr-azulEscuro);
     padding: 10px;
+
 }
 
 
@@ -266,7 +262,6 @@ h2 {
 
 .produto h3 {
     margin: 10px 0;
-    font-size: 18px;
     color: var(--clr-azulEscuro);
 }
 
@@ -294,129 +289,7 @@ h2 {
 
 /*#endregion*/
 
-/*#region footer*/
-.rodape {
-    background-color: var(--clr-azul);
-    color: var(--clr-azulEscuro);
-    text-align: center;
-    padding: 20px 10px;
-}
-
-.rodape p {
-    margin: 5px 0;
-    font-size: 14px;
-}
-
-/*#endregion*/
-
-
-/*#region fale conosco*/
-.faleConosco {
-    margin-left: 350px;
-    margin-right: 350px;
-}
-
-.welcome,
-input {
-    border-radius: 10px;
-    margin-top: 20px;
-    font-size: 15px;
-    width: 400px;
-    padding-left: 10px;
-    padding-top: 5px;
-    font-family: 'ABeeZee';
-    color: var(--clr-azulEscuro);
-    border: 3px solid var(--clr-rosa) !important;
-}
-
-.welcome,
-input:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-.welcome,
-input::placeholder {
-    color: var(--clr-azulEscuro);
-    opacity: 1;/
-}
-
-.welcome,
-textarea {
-    border-radius: 10px;
-    margin-top: 20px;
-    font-size: 15px;
-    width: 400px;
-    height: 150px;
-    padding-left: 10px;
-    padding-top: 10px;
-    font-family: 'ABeeZee';
-    color: var(--clr-azulEscuro);
-    border: 3px solid var(--clr-rosa) !important;
-}
-
-.welcome, textarea::placeholder {
-    color: var(--clr-azulEscuro);
-    opacity: 1;
-}
-
-.welcome, textarea:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-#btnSaiba {
-    background-color: var(--clr-rosa);
-    font-family: 'Mochiy Pop P One';
-    color: var(--clr-azulEscuro);
-    width: 150px;
-}
-
-#btnSaiba:hover {
-    background-color: var(--clr-azul);
-    font-family: 'Mochiy Pop P One';
-}
-
-.welcome, textarea:hover {
-    background-color: var(--clr-rosa);
-}
-
-.welcome, input:hover {
-    background-color: var(--clr-rosa);
-}
-
-.mapaeForm {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1180px;
-    background-color: azure;
-    margin: 0 auto;
-}
-
-.azul {
-    width: 50%;
-}
-
-iframe {
-    padding-top: 20px;
-    width: 100%;
-    height: 200px;
-    border-radius: 10px 10px 10px 10px !important;
-}
-
-.testetexto {
-    display: flex;
-}
-
-h4 {
-    padding-right: 50px;
-}
-
-.faleConoscoBg {
-    background-color: var(--clr-rosa);
-    text-align: center;
-}
-
+/*#region bg*/
 .sessaoWelcomeBg {
     background-color: var(--clr-rosa);
     text-align: center;
@@ -430,6 +303,175 @@ h4 {
 .servicosBg {
     background-color: var(--clr-rosa);
     text-align: center;
+}
+
+/*#endregion*/
+
+
+.sessaoContato {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.faleConoscoBg {
+    background-color: var(--clr-rosa);
+    text-align: center;
+    padding: 20px 0 50px 0;
+    margin-bottom: 30px;
+}
+
+.faleConoscoBg span,
+.contatoInfo span,
+.adoteBg span,
+.servicosBg span,
+.sessaoProducts span{
+    font-family: 'ABeeZee';
+    color: var(--clr-azulEscuro);
+}
+
+.faleConoscoBg h3,
+.contatoInfo h3 {
+    font-family: 'Mochiy Pop p One';
+    color: var(--clr-azulEscuro);
+    padding-top: 10px;
+}
+
+.faleConoscoBg h4,
+.contatoInfo h4,
+.cardTitle h3 {
+    font-family: 'ABeeZee';
+    font-weight: normal;
+    color: var(--clr-azulEscuro);
+}
+
+.cardsWelcome{
+   padding-top: 0px;
+}
+
+.sessaoContato .frmInput,
+.sessaoContato textarea {
+    width: 450px;
+}
+
+.sessaoContato .frmInput {
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-family: 'ABeeZee';
+    color: var(--clr-azulEscuro);
+    border: 3px solid var(--clr-rosa);
+}
+
+.sessaoContato .frmInput:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.sessaoContato .frmInput::placeholder {
+    color: var(--clr-azulEscuro);
+    opacity: 1;/
+}
+
+.sessaoContato textarea {
+    border-radius: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    width: 450px;
+    height: 150px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-family: 'ABeeZee';
+    color: var(--clr-azulEscuro);
+    border: 3px solid var(--clr-rosa) !important;
+}
+
+
+
+.formularioContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#btnSaiba {
+    background-color: var(--clr-rosa);
+    font-family: 'Mochiy Pop P One';
+    color: var(--clr-azulEscuro);
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 50px;
+    border: none;
+}
+
+.formWrapper {
+    width: 465px;
+    margin-right: 100px;
+}
+
+.contatoInfo {
+    width: 50%;
+}
+
+#btnSaiba:hover {
+    background-color: var(--clr-azul);
+    font-family: 'Mochiy Pop P One';
+    border: var(--clr-azul) solid;
+    justify-items: auto;
+}
+
+.sessaoContato iframe {
+    padding-top: 20px;
+    width: 100%;
+    height: 265px;
+    border-radius: 10px 10px 10px 10px !important;
+}
+
+.sessaoContato textarea:hover {
+    background-color: var(--clr-rosa) !important;
+}
+
+.sessaoContato .frmInput:hover {
+    background-color: var(--clr-rosa);
+}
+
+.telefoneContainer {
+    display: flex;
+}
+
+.textTelefone h4:last-child {
+    padding-left: 100px;
+}
+
+textarea::placeholder {
+    color: var(--clr-azulEscuro);
+    opacity: 1;
+}
+
+.sessaoContato .textarea:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/*#endregion*/
+
+
+/*#region footer*/
+.rodape {
+    background-color: var(--clr-azul);
+    color: var(--clr-azulEscuro);
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.rodape p {
+    margin: 5px 0;
+    font-size: 14px;
 }
 
 /*#endregion*/
