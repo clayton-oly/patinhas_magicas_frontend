@@ -89,14 +89,8 @@ h2,
 }
 
 .imgSocias {
-    width: 33px;
-    height: 35.47px;
-}
-
-.imgSocias2 {
-    width: 26px;
-    height: 24.27px;
-    margin: auto;
+    width: 30px;
+    height: 30px;
 }
 
 /* Grid Layout */
@@ -324,7 +318,7 @@ h2,
 .contatoInfo span,
 .adoteBg span,
 .servicosBg span,
-.sessaoProducts span{
+.sessaoProducts span {
     font-family: 'ABeeZee';
     color: var(--clr-azulEscuro);
 }
@@ -344,8 +338,8 @@ h2,
     color: var(--clr-azulEscuro);
 }
 
-.cardsWelcome{
-   padding-top: 0px;
+.cardsWelcome {
+    padding-top: 0px;
 }
 
 .sessaoContato .frmInput,
@@ -464,14 +458,53 @@ textarea::placeholder {
 /*#region footer*/
 .rodape {
     background-color: var(--clr-azul);
+    align-content: center;
+    text-align: center;
+    justify-items: center;
+}
+
+.rodape-container {
+    background-color: var(--clr-azul);
     color: var(--clr-azulEscuro);
     text-align: center;
     padding: 20px 10px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    gap: 150px;
+    text-align: left;
 }
 
 .rodape p {
+    color: var(--clr-azulEscuro);
+    font-family: 'ABeeZee';
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.imgLogoRodape img {
     margin: 5px 0;
     font-size: 14px;
+    width: 200px;
+}
+
+.footerContainer h4 {
+    font-family: 'Mochiy Pop p One';
+    font-weight: 100;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+.logoRodape li {
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoRodape img {
+    width: 20px;
+    height: 20px;
 }
 
 /*#endregion*/
