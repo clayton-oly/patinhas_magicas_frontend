@@ -300,21 +300,25 @@ h2,
 }
 
 /*#endregion*/
-
-
-.sessaoContato {
-    max-width: 1180px;
-    margin: 0 auto;
+.contatoTitle,
+.contatoTitle span {
+    background: var(--clr-rosa);
+    text-align: center;
 }
 
-.faleConoscoBg {
+.containerContato {
+    display: flex;
+    justify-content: center;
+}
+
+.contatoTitle {
     background-color: var(--clr-rosa);
     text-align: center;
     padding: 20px 0 50px 0;
     margin-bottom: 30px;
 }
 
-.faleConoscoBg span,
+.contatoTitle span,
 .contatoInfo span,
 .adoteBg span,
 .servicosBg span,
@@ -323,14 +327,14 @@ h2,
     color: var(--clr-azulEscuro);
 }
 
-.faleConoscoBg h3,
+.contatoTitle h3,
 .contatoInfo h3 {
     font-family: 'Mochiy Pop p One';
     color: var(--clr-azulEscuro);
     padding-top: 10px;
 }
 
-.faleConoscoBg h4,
+.contatoTitle h4,
 .contatoInfo h4,
 .cardTitle h3 {
     font-family: 'ABeeZee';
@@ -342,12 +346,12 @@ h2,
     padding-top: 0px;
 }
 
-.sessaoContato .frmInput,
-.sessaoContato textarea {
+.containerContato .frmInput,
+.containerContato textarea {
     width: 450px;
 }
 
-.sessaoContato .frmInput {
+.containerContato .frmInput {
     border-radius: 10px;
     margin-top: 20px;
     font-size: 15px;
@@ -358,17 +362,17 @@ h2,
     border: 3px solid var(--clr-rosa);
 }
 
-.sessaoContato .frmInput:focus {
+.containerContato .frmInput:focus {
     outline: none;
     box-shadow: none;
 }
 
-.sessaoContato .frmInput::placeholder {
+.containerContato .frmInput::placeholder {
     color: var(--clr-azulEscuro);
-    opacity: 1;/
+    opacity: 1;
 }
 
-.sessaoContato textarea {
+.containerContato textarea {
     border-radius: 10px;
     margin-top: 20px;
     font-size: 15px;
@@ -380,8 +384,6 @@ h2,
     color: var(--clr-azulEscuro);
     border: 3px solid var(--clr-rosa) !important;
 }
-
-
 
 .formularioContainer {
     display: flex;
@@ -414,23 +416,23 @@ h2,
 
 #btnSaiba:hover {
     background-color: var(--clr-azul);
-    font-family: 'Mochiy Pop P One';
     border: var(--clr-azul) solid;
     justify-items: auto;
+    cursor: pointer;
 }
 
-.sessaoContato iframe {
+.containerContato iframe {
     padding-top: 20px;
     width: 100%;
     height: 265px;
     border-radius: 10px 10px 10px 10px !important;
 }
 
-.sessaoContato textarea:hover {
+.containerContato textarea:hover {
     background-color: var(--clr-rosa) !important;
 }
 
-.sessaoContato .frmInput:hover {
+.containerContato .frmInput:hover {
     background-color: var(--clr-rosa);
 }
 
@@ -447,7 +449,7 @@ textarea::placeholder {
     opacity: 1;
 }
 
-.sessaoContato .textarea:focus {
+.containerContato textarea:focus {
     outline: none;
     box-shadow: none;
 }
@@ -456,55 +458,58 @@ textarea::placeholder {
 
 
 /*#region footer*/
-.rodape {
+footer {
     background-color: var(--clr-azul);
     align-content: center;
     text-align: center;
     justify-items: center;
+
+    .footer-container {
+        background-color: var(--clr-azul);
+        color: var(--clr-azulEscuro);
+        text-align: center;
+        padding: 20px 10px;
+        display: flex;
+        align-content: center;
+        justify-content: space-around;
+        gap: 150px;
+        text-align: left;
+
+
+        .logoFooter img {
+            margin: 5px 0;
+            font-size: 14px;
+            width: 200px;
+        }
+
+        .imgSocialFooter img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .imgSocialFooter li {
+            list-style: none;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    p {
+        color: var(--clr-azulEscuro);
+        font-family: 'ABeeZee';
+        font-size: 12px;
+        padding-top: 5px;
+    }
+
+    h4 {
+        font-family: 'Mochiy Pop p One';
+        font-weight: 100;
+        font-size: 12px;
+        margin-bottom: 30px;
+    }
 }
 
-.rodape-container {
-    background-color: var(--clr-azul);
-    color: var(--clr-azulEscuro);
-    text-align: center;
-    padding: 20px 10px;
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-    gap: 150px;
-    text-align: left;
-}
 
-.rodape p {
-    color: var(--clr-azulEscuro);
-    font-family: 'ABeeZee';
-    font-size: 12px;
-    padding-top: 5px;
-}
-
-.imgLogoRodape img {
-    margin: 5px 0;
-    font-size: 14px;
-    width: 200px;
-}
-
-.footerContainer h4 {
-    font-family: 'Mochiy Pop p One';
-    font-weight: 100;
-    font-size: 12px;
-    margin-bottom: 30px;
-}
-
-.logoRodape li {
-    list-style: none;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-}
-
-.logoRodape img {
-    width: 20px;
-    height: 20px;
-}
 
 /*#endregion*/

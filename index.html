@@ -11,7 +11,7 @@
 
 <body>
 
-    <div class="topoBg">
+    <div class="topoBg" id="home">
         <!-- Navbar -->
         <nav class="navbar">
             <!-- Logo à esquerda -->
@@ -158,68 +158,87 @@
 
     </section>
 
-    <div class="faleConoscoBg">
-        <h2>Fale Conosco</h2>
-        <span>Envie sua mensagem, assim que possível entraremos em contato!</span>
-    </div>
 
-    <section id="contato" class="sessaoContato">
 
-        <div class="formularioContainer">
-            <div class="formWrapper">
-                <form action="">
+    <section id="contato">
+
+        <div class="contatoTitle">
+            <h2>Fale Conosco</h2>
+            <span>Envie sua mensagem, assim que possível entraremos em contato!</span>
+        </div>
+
+
+        <div class="containerContato">
+            <div class="formularioContainer">
+                <form action="" class="formWrapper">
                     <input type="text" placeholder="Nome:" class="frmInput">
                     <input type="email" placeholder="Email:" class="frmInput">
                     <input type="tel" placeholder="Telefone:" class="frmInput">
                     <textarea placeholder="Deixe sua mensagem:" class="frmInput"></textarea>
                     <input type="button" id="btnSaiba" value="Saiba mais">
                 </form>
-            </div>
+                <div class="contatoInfo">
+                    <h3>Clínica, Creche e Pet Shop</h3>
+                    <div class="telefoneContainer">
+                        <h4>(11) 96215-2155</h4>
+                        <h4>(11) 96545-5481</h4>
+                    </div>
 
-            <div class="contatoInfo">
-                <h3>Clínica, Creche e Pet Shop</h3>
-                <div class="telefoneContainer">
-                    <h4>(11) 96215-2155</h4>
-                    <h4>(11) 96545-5481</h4>
+                    <h3>Onde estamos:</h3>
+                    <h4>Rua Ficticía, 899 - Bairro da Imaginação | CEP: 008185-689 - São Paulo/SP</h4>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235203.81500692177!2d-43.58841988251077!3d-22.9111720903467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio+de+Janeiro%2C+RJ!5e0!3m2!1spt-BR!2sbr!4v1476880758681"
+                        frameborder="0"></iframe>
                 </div>
-
-                <h3>Onde estamos:</h3>
-                <h4>Rua Ficticía, 899 - Bairro da Imaginação | CEP: 008185-689 - São Paulo/SP</h4>
-
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235203.81500692177!2d-43.58841988251077!3d-22.9111720903467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio+de+Janeiro%2C+RJ!5e0!3m2!1spt-BR!2sbr!4v1476880758681"
-                    frameborder="0"></iframe>
             </div>
         </div>
+
     </section>
 
 
 
-    <footer class="rodape">
-        <div class="rodape-container">
+    <footer>
+        <div class="footer-container">
 
-            <ul class="imgLogoRodape">
-                <li><img src="./img/logo.png" alt=""></li>
-            </ul>
+            <div class="logoFooter">
+                <img src="./img/logo.png" alt="">
+            </div>
 
             <ul>
                 <li>
                     <h4>Nossos produtos</h4>
                 </li>
-                <li><p>Ração Seca</p></li>
-                <li><p>Lata</p></li>
-                <li><p>Cuidado oral</p></li>
-                <li><p>Snack</p></li>
+                <li>
+                    <p>Ração Seca</p>
+                </li>
+                <li>
+                    <p>Lata</p>
+                </li>
+                <li>
+                    <p>Cuidado oral</p>
+                </li>
+                <li>
+                    <p>Snack</p>
+                </li>
             </ul>
 
             <ul>
                 <li>
                     <h4>Dicas e Avisos</h4>
                 </li>
-                <li><p>Adoção</p></li>
-                <li><p>Cuidados</p></li>
-                <li><p>Alimentação</p></li>
-                <li><p>Comportamento</p></li>
+                <li>
+                    <p>Adoção</p>
+                </li>
+                <li>
+                    <p>Cuidados</p>
+                </li>
+                <li>
+                    <p>Alimentação</p>
+                </li>
+                <li>
+                    <p>Comportamento</p>
+                </li>
             </ul>
 
             <ul>
@@ -228,15 +247,13 @@
                 </li>
             </ul>
 
-            <div class="logoRodape">
+            <div class="imgSocialFooter">
                 <ul>
                     <li><img src="./img/face.png"></li>
-                    <li><img src="./img/x.png" ></li>
+                    <li><img src="./img/x.png"></li>
                     <li><img src="./img/insta.png"></li>
                 </ul>
             </div>
-
-
 
         </div>
 
